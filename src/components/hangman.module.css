@@ -1,0 +1,10 @@
+.hangman {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hangman img {
+  margin-top: 30px;
+}

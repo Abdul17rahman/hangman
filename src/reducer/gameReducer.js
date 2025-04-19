@@ -1,7 +1,7 @@
 const initialState = {
   score: 0,
   lives: 5,
-  guess: "",
+  guess: "answer",
   guessed: "",
   // - Game level -- easy, medium, hard
   level: "easy",

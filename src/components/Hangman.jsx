@@ -15,7 +15,7 @@ const imgs = [img0, img1, img2, img3, img4, img5, img6];
 export default function Hangman() {
   const [images, setImages] = useState(imgs);
 
-  const { state, dispatch } = useGame();
+  const { state } = useGame();
 
   const { guess, guessed } = state;
 
@@ -34,7 +34,7 @@ export default function Hangman() {
         {guess.split("").map((ltr) => (guessed.includes(ltr) ? ltr : " _ "))}
       </p>
 
-      <Keyboard dispatch={dispatch} />
+      <Keyboard />
 
       <button>Restart</button>
     </div>
